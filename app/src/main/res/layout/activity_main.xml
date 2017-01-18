@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdfdf"
+    android:orientation="vertical"
+    tools:context="com.hon.newsflashview_master.MainActivity"
+    >
+
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_marginTop="10dp"
+      android:background="@android:color/white"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:text="京东快报: "
+        />
+
+    <com.hon.newsflashview.NewsflashView
+        android:id="@+id/newsflash"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_marginTop="30dp"
+      android:background="@android:color/white"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:text="淘宝头条: "
+        />
+
+    <com.hon.newsflashview.NewsflashView
+        android:id="@+id/newsflash2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        />
+
+  </LinearLayout>
+
+</LinearLayout>
